@@ -47,7 +47,7 @@ words = line.split() #divide las palabras con un split
 email = words[1] 
 pieces = email.split('@') 
 print(pieces[1])
-
+ 
 
 
 
