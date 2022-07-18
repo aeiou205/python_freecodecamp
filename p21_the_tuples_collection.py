@@ -59,7 +59,7 @@ print(a)
 #---tuples and Dictionaries
 #the items() method in dictionaries return a list of (key , value) tuples
 d = dict()
-d['csev'] = 2
+d['csev'] = 2 #key and item (im thoung)
 d['cwen'] = 4
 for (k,v) in d.items():
     print(k, v)
