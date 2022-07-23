@@ -20,6 +20,7 @@
 
 #we fine-tune whats is matched by adding special characters to the sstring
 import re
+from xml.dom.pulldom import CHARACTERS
 hand = open('filetext.txt')
 for line in hand:
     line = line.rstrip()
@@ -31,6 +32,20 @@ for line in hand:
     line = line.rstrip()
     if re.search('From:', line) :
         print(line)
+
+#wild-card CHARACTERS-
+#the dot characters matches any characters
+# if you add the asterisk character, the characters is "any number of times" 
+
+#X.*  /////CUAL QUIER CANTIDAD DE N VECES
+
+
+#Depending on how "clean" your data is and the porpuse of your 
+#application , you ,ay want to narrow your match down a bit 
+
+
+#X-\S+  reducir la councidencia, match any non- whiteespace character
+#       coincide con cualquier caracter que no sea un esoacio en blanco
 
 
 
