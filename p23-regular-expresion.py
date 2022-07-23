@@ -14,6 +14,26 @@
 #it is kind of an "ol school" languaje - compact
 #(lenguaje de vieja escuela muy poderoso y divertido)
 
+#Rhe regular expression module 
+
+#using re.search() like startswith()
+
+#we fine-tune whats is matched by adding special characters to the sstring
+import re
+hand = open('filetext.txt')
+for line in hand:
+    line = line.rstrip()
+    if line.startswith('From:') :
+        print(line)
+
+hand = open('filetext.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('From:', line) :
+        print(line)
+
+
+
 
 
 
