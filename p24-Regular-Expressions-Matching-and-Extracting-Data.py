@@ -21,3 +21,11 @@ print(y)
 y= re.findall('[AEIOU]+',x)
 print(y)
 
+x= 'From: Using The : character'
+y = re.findall('^F.+:', x)
+print(y)
+#  ^F First characters in the match is an f
+#  .+ One more characters
+#   : Last character in the match is a:
+
+
